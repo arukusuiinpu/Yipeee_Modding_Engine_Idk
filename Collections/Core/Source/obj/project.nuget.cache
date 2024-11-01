@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "3GzJ3dJqkL8=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AlexN\\OneDrive\\Рабочий стол\\Yipeee\\Collections\\Core\\Source\\Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AlexN\\.nuget\\packages\\dynamicexpresso.core\\2.16.1\\dynamicexpresso.core.2.16.1.nupkg.sha512",
+    "C:\\Users\\AlexN\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

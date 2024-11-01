@@ -1,0 +1,11 @@
+["Core.NoiseSettings"]
+function = "Add"
+seed = 97
+noiseScale = 24
+octaves = 6
+persistance = 0.5
+lacunarity = 1.5
+lerpMin = 0.5
+lerpMax = 1.2
+heightMultiply = 1
+heightOffset = 0

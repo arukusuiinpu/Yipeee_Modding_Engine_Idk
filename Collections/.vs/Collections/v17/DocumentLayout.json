@@ -1,0 +1,434 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\ThingCategories\\Terrain_Category.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\ThingCategories\\Terrain_Category.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\ThingCategories\\Terrain_Category_World1.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\ThingCategories\\Terrain_Category_World1.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Grassy_Dirt.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Things\\Terrain\\Terrain_Grassy_Dirt.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Water.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Things\\Terrain\\Terrain_Water.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Moisture0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Worlds\\World0\\World0_Moisture0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Moisture0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Worlds\\World1\\World1_Moisture0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Worlds\\World1\\World1.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Worlds\\World0\\World0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Noise1.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Worlds\\World0\\World0_Noise1.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Noise0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Worlds\\World0\\World0_Noise0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Variety0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Worlds\\World0\\World0_Variety0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Variety0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Worlds\\World1\\World1_Variety0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Noise1.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Worlds\\World1\\World1_Noise1.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Noise0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Worlds\\World1\\World1_Noise0.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Red_Grass.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Things\\Terrain\\Terrain_Red_Grass.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Rich_Soil.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Things\\Terrain\\Terrain_Rich_Soil.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Poor_Soil.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Things\\Terrain\\Terrain_Poor_Soil.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Mush.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Things\\Terrain\\Terrain_Mush.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Mountain.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Things\\Terrain\\Terrain_Mountain.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Grass.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Things\\Terrain\\Terrain_Grass.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Dirt.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Things\\Terrain\\Terrain_Dirt.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World2.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\Worlds\\World2.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\collection.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\collection.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\knife.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\knife.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\club.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\club.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\axe.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Features\\axe.toml||{3D861BE2-55D5-4943-8AAC-38BA31699544}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Terrain_Grassy_Dirt.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Grassy_Dirt.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Things\\Terrain\\Terrain_Grassy_Dirt.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Grassy_Dirt.toml",
+              "RelativeToolTip": "Core\\Features\\Things\\Terrain\\Terrain_Grassy_Dirt.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAxAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:32:18.645Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Terrain_Water.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Water.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Things\\Terrain\\Terrain_Water.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Water.toml",
+              "RelativeToolTip": "Core\\Features\\Things\\Terrain\\Terrain_Water.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:28:16.624Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "World0_Moisture0.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Moisture0.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Worlds\\World0\\World0_Moisture0.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Moisture0.toml",
+              "RelativeToolTip": "Core\\Features\\Worlds\\World0\\World0_Moisture0.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAASAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-16T15:30:41.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "World0_Noise1.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Noise1.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Worlds\\World0\\World0_Noise1.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Noise1.toml",
+              "RelativeToolTip": "Core\\Features\\Worlds\\World0\\World0_Noise1.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-16T15:30:35.239Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "World0.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Worlds\\World0\\World0.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0.toml",
+              "RelativeToolTip": "Core\\Features\\Worlds\\World0\\World0.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T08:19:44.064Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "World1.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Worlds\\World1\\World1.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1.toml",
+              "RelativeToolTip": "Core\\Features\\Worlds\\World1\\World1.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAhAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:19:46.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "World1_Moisture0.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Moisture0.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Worlds\\World1\\World1_Moisture0.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Moisture0.toml",
+              "RelativeToolTip": "Core\\Features\\Worlds\\World1\\World1_Moisture0.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAIAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:20:28.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Terrain_Category_World1.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\ThingCategories\\Terrain_Category_World1.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\ThingCategories\\Terrain_Category_World1.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\ThingCategories\\Terrain_Category_World1.toml",
+              "RelativeToolTip": "Core\\Features\\ThingCategories\\Terrain_Category_World1.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA2AAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:19:26.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Terrain_Category.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\ThingCategories\\Terrain_Category.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\ThingCategories\\Terrain_Category.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\ThingCategories\\Terrain_Category.toml",
+              "RelativeToolTip": "Core\\Features\\ThingCategories\\Terrain_Category.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-16T17:21:52.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "World0_Noise0.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Noise0.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Worlds\\World0\\World0_Noise0.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Noise0.toml",
+              "RelativeToolTip": "Core\\Features\\Worlds\\World0\\World0_Noise0.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAKAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-15T18:25:17.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "World0_Variety0.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Variety0.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Worlds\\World0\\World0_Variety0.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World0\\World0_Variety0.toml",
+              "RelativeToolTip": "Core\\Features\\Worlds\\World0\\World0_Variety0.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:12:28.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "World1_Variety0.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Variety0.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Worlds\\World1\\World1_Variety0.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Variety0.toml",
+              "RelativeToolTip": "Core\\Features\\Worlds\\World1\\World1_Variety0.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAPAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:20:57.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "World1_Noise1.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Noise1.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Worlds\\World1\\World1_Noise1.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Noise1.toml",
+              "RelativeToolTip": "Core\\Features\\Worlds\\World1\\World1_Noise1.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:20:44.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "World1_Noise0.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Noise0.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Worlds\\World1\\World1_Noise0.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World1\\World1_Noise0.toml",
+              "RelativeToolTip": "Core\\Features\\Worlds\\World1\\World1_Noise0.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAALAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:20:36.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Terrain_Red_Grass.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Red_Grass.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Things\\Terrain\\Terrain_Red_Grass.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Red_Grass.toml",
+              "RelativeToolTip": "Core\\Features\\Things\\Terrain\\Terrain_Red_Grass.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:19:20.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Terrain_Rich_Soil.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Rich_Soil.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Things\\Terrain\\Terrain_Rich_Soil.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Rich_Soil.toml",
+              "RelativeToolTip": "Core\\Features\\Things\\Terrain\\Terrain_Rich_Soil.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:03:46.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Terrain_Poor_Soil.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Poor_Soil.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Things\\Terrain\\Terrain_Poor_Soil.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Poor_Soil.toml",
+              "RelativeToolTip": "Core\\Features\\Things\\Terrain\\Terrain_Poor_Soil.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAvAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:03:22.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Terrain_Mush.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Mush.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Things\\Terrain\\Terrain_Mush.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Mush.toml",
+              "RelativeToolTip": "Core\\Features\\Things\\Terrain\\Terrain_Mush.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T09:03:01.498Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Terrain_Mountain.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Mountain.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Things\\Terrain\\Terrain_Mountain.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Mountain.toml",
+              "RelativeToolTip": "Core\\Features\\Things\\Terrain\\Terrain_Mountain.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-16T17:31:44.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Terrain_Grass.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Grass.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Things\\Terrain\\Terrain_Grass.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Grass.toml",
+              "RelativeToolTip": "Core\\Features\\Things\\Terrain\\Terrain_Grass.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-29T08:15:38.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Terrain_Dirt.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Dirt.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Things\\Terrain\\Terrain_Dirt.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Things\\Terrain\\Terrain_Dirt.toml",
+              "RelativeToolTip": "Core\\Features\\Things\\Terrain\\Terrain_Dirt.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-16T17:28:38.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "World2.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World2.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\Worlds\\World2.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\Worlds\\World2.toml",
+              "RelativeToolTip": "Core\\Features\\Worlds\\World2.toml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-16T15:33:02.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "collection.json",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\collection.json",
+              "RelativeDocumentMoniker": "Core\\collection.json",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\collection.json",
+              "RelativeToolTip": "Core\\collection.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-10-08T12:39:17.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "knife.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\knife.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\knife.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\knife.toml",
+              "RelativeToolTip": "Core\\Features\\knife.toml",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-08T12:35:37.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "club.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\club.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\club.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\club.toml",
+              "RelativeToolTip": "Core\\Features\\club.toml",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-08T12:35:36.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "axe.toml",
+              "DocumentMoniker": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\axe.toml",
+              "RelativeDocumentMoniker": "Core\\Features\\axe.toml",
+              "ToolTip": "C:\\Users\\AlexN\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\Yipeee\\Collections\\Core\\Features\\axe.toml",
+              "RelativeToolTip": "Core\\Features\\axe.toml",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|",
+              "WhenOpened": "2024-10-08T12:35:33.176Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+["Core.WorldSettings"]
+name = "World0"
+position = [ 0, 0, 0 ]
+scale = 1
+height = [ "World0_Noise0", "World0_Noise1" ]
+moisture = [ "World0_Moisture0" ]
+variety = [ "World0_Variety0" ]
+terrainCategory = "Terrain_Category"

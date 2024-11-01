@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Core",
+    "\\Core\\Features",
+    "\\Core\\Features\\ThingCategories",
+    "\\Core\\Features\\Things",
+    "\\Core\\Features\\Things\\Terrain",
+    "\\Core\\Features\\Worlds",
+    "\\Core\\Features\\Worlds\\World0",
+    "\\Core\\Features\\Worlds\\World1",
+    "\\Core\\Resources"
+  ],
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,5 @@
+["Core.ThingWithGrafic"]
+name = "Grassy Dirt"
+grafic = "\\Core\\Resources\\Terrain\\Grassy_Dirt.png"
+
+["Core.ExtTerrain"]

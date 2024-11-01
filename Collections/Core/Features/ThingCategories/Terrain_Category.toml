@@ -1,0 +1,24 @@
+["Core.ThingCategory"]
+name = "Terrain"
+things = [
+"Terrain_Water",
+"Terrain_Mush",
+"Terrain_Grass",
+"Terrain_Grassy_Dirt",
+"Terrain_Dirt",
+"Terrain_Rich_Soil",
+"Terrain_Poor_Soil",
+"Terrain_Mountain"
+]
+
+["Core.ExtTerrainCategory"]
+rules = [
+[ { parameter = "height", operation = "<", value = 0.1 } ],
+[ { parameter = "height", operation = "<", value = 0.25 }, { parameter = "moisture", operation = ">=", value = 0.5 } ],
+[ { parameter = "height", operation = "<", value = 0.4 }, { parameter = "moisture", operation = "<", value = 0.75 }, { parameter = "variety", operation = "<", value = 0.5 } ],
+[ { parameter = "height", operation = "<", value = 0.4 }, { parameter = "moisture", operation = "<", value = 0.65 }, { parameter = "variety", operation = "<", value = 0.6 } ],
+[ { parameter = "height", operation = "<", value = 0.4 }, { parameter = "moisture", operation = "<", value = 0.5 } ],
+[ { parameter = "height", operation = "<", value = 0.4 }, { parameter = "moisture", operation = ">=", value = 0.5 } ],
+[ { parameter = "height", operation = "<", value = 0.5 } ],
+[ { parameter = "height", operation = ">=", value = 0.5 } ]
+]
