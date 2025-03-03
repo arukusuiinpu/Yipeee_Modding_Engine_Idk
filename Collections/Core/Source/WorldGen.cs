@@ -128,17 +128,19 @@ namespace Core
         public string name;
         public object[] position;
         public float scale;
+        public int seed;
         public object[] height;
         public object[] moisture;
         public object[] variety;
         public string terrainCategory;
 
-        public WorldSettings(string tableName, string name, object[] position, float scale, object[] height, object[] moisture, object[] variety, string terrainCategory) : base(tableName)
+        public WorldSettings(string tableName, string name, object[] position, float scale, int seed, object[] height, object[] moisture, object[] variety, string terrainCategory) : base(tableName)
         {
             this.tableName = tableName;
             this.name = name;
             this.position = position;
             this.scale = scale;
+            this.seed = seed;
             this.height = height;
             this.moisture = moisture;
             this.variety = variety;
@@ -186,6 +188,25 @@ namespace Core
             this.heightOffset = heightOffset;
         }
     }
+    public class World
+    {
+        public Vector3 location;
+        public float size;
+        public int seed;
+        public NoiseTypes settings;
+        public ThingWithGrafic[] terrains;
+        public TerrainRule[][] rules;
+
+        public World(Vector3 location, float size, int seed, NoiseTypes settings, ThingWithGrafic[] terrains, TerrainRule[][] rules)
+        {
+            this.location = location;
+            this.size = size;
+            this.seed = seed;
+            this.settings = settings;
+            this.terrains = terrains;
+            this.rules = rules;
+        }
+    }
     public static class WorldGen
     {
         // WorldSize in X is 20,000 , where in coordinates X -20,000 = 20,000 and are the same vertical line on the sphere
@@ -194,11 +215,15 @@ namespace Core
         public static Vector3 worldSize = new Vector3(2000f, 1000f, 1000f);
 
         public static float sphereRadius = 100f;
-        public static float renderDistance = 100f;
+        public static float renderDistance = 160f;
 
-        public static Vector2Int chunkSize = new Vector2Int(24, 24);
+        public static Vector2Int chunkSize = new Vector2Int(32, 32);
+        public static Vector2[] chunkPoses = Array.Empty<Vector2>();
+        public static Chunk[] chunks = Array.Empty<Chunk>();
 
         public static int seed = 0;
+
+        public static World mainWorld;
 
         private static GameObject defaultTile = null;
 
@@ -270,10 +295,7 @@ namespace Core
                     float y = float.Parse(potentualWorldSettings.position[1].ToSafeString());
                     float z = float.Parse(potentualWorldSettings.position[2].ToSafeString());
 
-                    Yipeee.Logger.Log(Yipeee.Logger.ObjectsToLog(rules), Yipeee.Logger.ObjectsToLog(rules), "", Color.green);
-                    Yipeee.Logger.Log(Yipeee.Logger.ObjectsToLog(terrains), Yipeee.Logger.ObjectsToLog(terrains), "", Color.green);
-
-                    GenerateWorld(new Vector3(x, y, z), potentualWorldSettings.scale, noises, terrains, rules);
+                    mainWorld = GenerateWorld(new Vector3(x, y, z), potentualWorldSettings.scale, potentualWorldSettings.seed, noises, terrains, rules);
                     terrains = [];
                     rules = [];
                 }
@@ -287,7 +309,7 @@ namespace Core
             Generate();
         }
 
-        public static void GenerateWorld(Vector3 location, float size, NoiseTypes settings, ThingWithGrafic[] terrains, TerrainRule[][] rules)
+        public static World GenerateWorld(Vector3 location, float size, int seed, NoiseTypes settings, ThingWithGrafic[] terrains, TerrainRule[][] rules)
         {
             //GameObject sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
             GameObject sphere = new GameObject("Planet");
@@ -310,7 +332,7 @@ namespace Core
                 {
                     if (Mathf.Pow(x + 0f, 2f) + Mathf.Pow(y + 0f, 2f) <= Mathf.Pow(renderDistance, 2f))
                     {
-                        Chunk chunk = SpawnChunk(new Vector2(x, y), scale, settings, terrains, rules);
+                        Chunk chunk = SpawnChunk(new Vector2(x, y), scale, seed, settings, terrains, rules);
                         chunk.self.transform.position += location;
                     }
                 }
@@ -338,122 +360,58 @@ namespace Core
             //     || Vector3.Distance(centroids[i] * sphereRadius, WorldToSphereCoordinates(new Vector3(0, 9990, 0), sphereRadius, true)) <= renderDistance)
             //        CreateDebugPlane(centroids[i] * sphereRadius, 0.01f);
             //}
-        }
 
-        public static Chunk SpawnChunk(Vector2 position, float scale, NoiseTypes settings, ThingWithGrafic[] terrains, TerrainRule[][] rules)
+            return new World(location, size, seed, settings, terrains, rules);
+        }
+        public static Chunk RegisterChunk(Vector2 position, Chunk chunk)
+        {
+            chunkPoses = Help.Push(chunkPoses, position);
+            chunks = Help.Push(chunks, chunk);
+
+            return chunk;
+        }
+        public static Chunk? GetChunk(Vector2 position)
+        {
+            for (int i = 0; i < chunkPoses.Length; i++)
+            {
+                if (chunkPoses[i] == position) return chunks[i];
+            }
+            return null;
+        }
+        public static Chunk SpawnChunk(Vector2 position, float scale, int seed, NoiseTypes noiseTypes, ThingWithGrafic[] terrains, TerrainRule[][] rules)
         {
             float[,] height = new float[chunkSize.x, chunkSize.y];
-            foreach (NoiseSettings noiseSettings in settings.height)
-            {
-                if (noiseSettings.function == "Add")
-                {
-                    float[,] perlin = Noise.GenerateNoiseMap(chunkSize.x, chunkSize.y, noiseSettings.seed, noiseSettings.noiseScale, noiseSettings.octaves, noiseSettings.persistance, noiseSettings.lacunarity, position, noiseSettings.lerpMin, noiseSettings.lerpMax);
-                    for (int y = 0; y < chunkSize.x; y++)
-                    {
-                        for (int x = 0; x < chunkSize.x; x++)
-                        {
-                            height[x, y] += (perlin[x, y] * noiseSettings.heightMultiply + noiseSettings.heightOffset);
-                        }
-                    }
-                }
-            }
-            foreach (NoiseSettings noiseSettings in settings.height)
-            {
-                if (noiseSettings.function == "Multiply")
-                {
-                    float[,] perlin = Noise.GenerateNoiseMap(chunkSize.x, chunkSize.y, noiseSettings.seed, noiseSettings.noiseScale, noiseSettings.octaves, noiseSettings.persistance, noiseSettings.lacunarity, position, noiseSettings.lerpMin, noiseSettings.lerpMax);
-                    for (int y = 0; y < chunkSize.x; y++)
-                    {
-                        for (int x = 0; x < chunkSize.x; x++)
-                        {
-                            height[x, y] *= (perlin[x, y] * noiseSettings.heightMultiply + noiseSettings.heightOffset);
-                        }
-                    }
-                }
-            }
-            for (int y = 0; y < chunkSize.x; y++)
-            {
-                for (int x = 0; x < chunkSize.x; x++)
-                {
-                    height[x, y] /= settings.height.Length;
-                }
-            }
-
             float[,] moisture = new float[chunkSize.x, chunkSize.y];
-            foreach (NoiseSettings noiseSettings in settings.moisture)
+            float[,] variety = new float[chunkSize.x, chunkSize.y];
+
+            void ProcessNoiseMap(float[,] map, NoiseSettings[]? settings)
             {
-                if (noiseSettings.function == "Add")
+                if (settings != null)
                 {
-                    float[,] perlin = Noise.GenerateNoiseMap(chunkSize.x, chunkSize.y, noiseSettings.seed, noiseSettings.noiseScale, noiseSettings.octaves, noiseSettings.persistance, noiseSettings.lacunarity, position, noiseSettings.lerpMin, noiseSettings.lerpMax);
-                    for (int y = 0; y < chunkSize.x; y++)
+                    foreach (NoiseSettings noiseSettings in settings)
                     {
-                        for (int x = 0; x < chunkSize.x; x++)
+                        float[,] perlin = Noise.GenerateNoiseMap(chunkSize.x, chunkSize.y, noiseSettings.seed + seed, noiseSettings.noiseScale, noiseSettings.octaves, noiseSettings.persistance, noiseSettings.lacunarity, position, noiseSettings.lerpMin, noiseSettings.lerpMax);
+                        for (int y = 0; y < chunkSize.x; y++)
                         {
-                            moisture[x, y] += (perlin[x, y] * noiseSettings.heightMultiply + noiseSettings.heightOffset);
+                            for (int x = 0; x < chunkSize.x; x++)
+                            {
+                                float height = perlin[x, y] * noiseSettings.heightMultiply + noiseSettings.heightOffset;
+                                if (noiseSettings.function == "Add")
+                                    map[x, y] += height / settings.Length;
+                                else if (noiseSettings.function == "Multiply")
+                                    map[x, y] *= height;
+                            }
                         }
                     }
-                }
-            }
-            foreach (NoiseSettings noiseSettings in settings.moisture)
-            {
-                if (noiseSettings.function == "Multiply")
-                {
-                    float[,] perlin = Noise.GenerateNoiseMap(chunkSize.x, chunkSize.y, noiseSettings.seed, noiseSettings.noiseScale, noiseSettings.octaves, noiseSettings.persistance, noiseSettings.lacunarity, position, noiseSettings.lerpMin, noiseSettings.lerpMax);
-                    for (int y = 0; y < chunkSize.x; y++)
-                    {
-                        for (int x = 0; x < chunkSize.x; x++)
-                        {
-                            moisture[x, y] *= (perlin[x, y] * noiseSettings.heightMultiply + noiseSettings.heightOffset);
-                        }
-                    }
-                }
-            }
-            for (int y = 0; y < chunkSize.x; y++)
-            {
-                for (int x = 0; x < chunkSize.x; x++)
-                {
-                    moisture[x, y] /= settings.moisture.Length;
                 }
             }
 
-            float[,] variety = new float[chunkSize.x, chunkSize.y];
-            foreach (NoiseSettings noiseSettings in settings.variety)
-            {
-                if (noiseSettings.function == "Add")
-                {
-                    float[,] perlin = Noise.GenerateNoiseMap(chunkSize.x, chunkSize.y, noiseSettings.seed, noiseSettings.noiseScale, noiseSettings.octaves, noiseSettings.persistance, noiseSettings.lacunarity, position, noiseSettings.lerpMin, noiseSettings.lerpMax);
-                    for (int y = 0; y < chunkSize.x; y++)
-                    {
-                        for (int x = 0; x < chunkSize.x; x++)
-                        {
-                            variety[x, y] += (perlin[x, y] * noiseSettings.heightMultiply + noiseSettings.heightOffset);
-                        }
-                    }
-                }
-            }
-            foreach (NoiseSettings noiseSettings in settings.variety)
-            {
-                if (noiseSettings.function == "Multiply")
-                {
-                    float[,] perlin = Noise.GenerateNoiseMap(chunkSize.x, chunkSize.y, noiseSettings.seed, noiseSettings.noiseScale, noiseSettings.octaves, noiseSettings.persistance, noiseSettings.lacunarity, position, noiseSettings.lerpMin, noiseSettings.lerpMax);
-                    for (int y = 0; y < chunkSize.x; y++)
-                    {
-                        for (int x = 0; x < chunkSize.x; x++)
-                        {
-                            variety[x, y] *= (perlin[x, y] * noiseSettings.heightMultiply + noiseSettings.heightOffset);
-                        }
-                    }
-                }
-            }
-            for (int y = 0; y < chunkSize.x; y++)
-            {
-                for (int x = 0; x < chunkSize.x; x++)
-                {
-                    variety[x, y] /= settings.variety.Length;
-                }
-            }
+            ProcessNoiseMap(height, noiseTypes.height);
+            ProcessNoiseMap(moisture, noiseTypes.moisture);
+            ProcessNoiseMap(variety, noiseTypes.variety);
 
             Chunk chunk = new Chunk(position);
+            RegisterChunk(position, chunk);
             for (int y = 0; y < chunkSize.y; y++)
             {
                 for (int x = 0; x < chunkSize.x; x++)
@@ -467,68 +425,43 @@ namespace Core
                         if (rules[i] != null)
                         {
                             bool finalResult = true;
-                            bool[] results = [];
 
                             foreach (TerrainRule rule in rules[i])
                             {
-                                //string log = x.ToString() + " " + y.ToString() + " | " + rule.Parameter.ToString() + "(" + height[x, y].ToString() + ")" + " " + rule.Operation.ToString() + " " + rule.Value.ToString();
-                                //Yipeee.Logger.Log(log, log, "", Color.magenta);
-
-                                bool result = false;
-
-                                float parameter = 0;
-                                switch (rule.Parameter)
+                                float parameter = rule.Parameter switch
                                 {
-                                    case "height":
-                                        parameter = height[x, y];
-                                        break;
-                                    case "moisture":
-                                        parameter = moisture[x, y];
-                                        break;
-                                    case "variety":
-                                        parameter = variety[x, y];
-                                        break;
-                                }
+                                    "height" => height[x, y],
+                                    "moisture" => moisture[x, y],
+                                    "variety" => variety[x, y],
+                                    _ => 0
+                                };
 
-                                switch (rule.Operation)
+                                bool result = rule.Operation switch
                                 {
-                                    case "<=":
-                                        result = result || (parameter <= rule.Value);
-                                        break;
-                                    case ">=":
-                                        result = result || (parameter >= rule.Value);
-                                        break;
-                                    case "<":
-                                        result = result || (parameter < rule.Value);
-                                        break;
-                                    case ">":
-                                        result = result || (parameter > rule.Value);
-                                        break;
-                                    case "==":
-                                        result = result || (parameter == rule.Value);
-                                        break;
+                                    "<=" => parameter <= rule.Value,
+                                    ">=" => parameter >= rule.Value,
+                                    "<" => parameter < rule.Value,
+                                    ">" => parameter > rule.Value,
+                                    "==" => parameter == rule.Value,
+                                    _ => false
+                                };
+
+                                if (!result)
+                                {
+                                    finalResult = false;
+                                    break;
                                 }
-
-                                results = Help.Push(results, result);
-                            }
-
-                            foreach (bool result in results)
-                            {
-                                finalResult = finalResult && result;
                             }
 
                             //Yipeee.Logger.Log(result.ToString(), result.ToString(), "", Color.magenta);
 
                             if (finalResult && i < terrains.Length)
                             {
-                                tex = Core.GetTexture(terrains[i].grafic);
+                                tex = terrains[i].grafic.placementLoading
+                                    ? terrains[i].grafic.LoadTexture()
+                                    : terrains[i].grafic.grafic;
                                 break;
                             }
-                        }
-                        else if (i >= rules.Length - 1)
-                        {
-                            tex = Core.GetTexture(terrains[i].grafic);
-                            break;
                         }
                     }
 
@@ -569,29 +502,23 @@ namespace Core
         {
             if (defaultTile == null)
             {
-                GameObject tile = GameObject.CreatePrimitive(PrimitiveType.Plane);
-                tile.transform.position = new Vector3(position.x, position.y);
-                tile.transform.localScale = Vector3.one * 0.1f * scale;
-                tile.transform.SetParent(chunk.transform);
-                tile.transform.localRotation = Quaternion.Euler(0f, 0f, 0f);
-                tile.name = "Tile";
-                tile.GetComponent<MeshRenderer>().material = Resources.Load("Materials/Mat", typeof(Material)) as Material;
-                tile.GetComponent<MeshRenderer>().material.color = Color.white;
+                defaultTile = GameObject.CreatePrimitive(PrimitiveType.Plane);
+                defaultTile.name = "Tile";
+                defaultTile.transform.localScale = Vector3.one * 0.1f;
+                defaultTile.GetComponent<MeshRenderer>().material = Resources.Load("Materials/Mat", typeof(Material)) as Material;
 
-                tile.GetComponent<MeshRenderer>().material.mainTexture = tileTexture;
-
-                defaultTile = tile;
-                return tile;
+                if (defaultTile.GetComponent<MeshRenderer>().material != null)
+                {
+                    defaultTile.GetComponent<MeshRenderer>().material.color = Color.white;
+                }
             }
-            else
-            {
-                GameObject tile = GameObject.Instantiate(defaultTile, chunk.transform);
-                tile.transform.position = new Vector3(position.x, position.y);
 
-                tile.GetComponent<MeshRenderer>().material.mainTexture = tileTexture;
+            GameObject tile = GameObject.Instantiate(defaultTile, chunk.transform);
+            tile.transform.position = new Vector3(position.x, position.y);
+            tile.transform.localScale *= scale;
+            tile.GetComponent<MeshRenderer>().material.mainTexture = tileTexture;
 
-                return tile;
-            }
+            return tile;
         }
         private static GameObject CreateDebugPlane(Vector3 coordinates, float scale)
         {

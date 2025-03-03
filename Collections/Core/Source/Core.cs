@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics;
 using Unity.Collections.LowLevel.Unsafe;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using Yipeee;
 
 namespace Core
@@ -155,6 +156,18 @@ namespace Core
             originalArray[originalArray.GetUpperBound(0)] = value;
             return originalArray;
         }
+        public static Vector2[] Push(Vector2[] originalArray, Vector2 value)
+        {
+            Array.Resize(ref originalArray, originalArray.Length + 1);
+            originalArray[originalArray.GetUpperBound(0)] = value;
+            return originalArray;
+        }
+        public static Chunk[] Push(Chunk[] originalArray, Chunk value)
+        {
+            Array.Resize(ref originalArray, originalArray.Length + 1);
+            originalArray[originalArray.GetUpperBound(0)] = value;
+            return originalArray;
+        }
     }
 
     public class Core : CollectionClass
@@ -183,8 +196,38 @@ namespace Core
                 ThingWithGrafic? potentualThing = Help.GetFeature(featureName, typeof(ThingWithGrafic)) as ThingWithGrafic;
                 if (potentualThing != null)
                 {
-                    texturePaths = Help.Push(texturePaths, potentualThing.grafic);
-                    textures = Help.Push(textures, Util.LoadTexture(Help.GetCollectionsPath() + potentualThing.grafic));
+                    if (potentualThing.grafic is TileGrafic)
+                    {
+                        TileGrafic? tileGrafic = potentualThing.grafic as TileGrafic;
+                        Texture2D texture2D = Util.LoadTexture(Help.GetCollectionsPath() + tileGrafic.graficPath);
+                        for (int y = 0; y < tileGrafic.tilesY; y++)
+                        {
+                            for (int x = 0; x < tileGrafic.tilesX; x++)
+                            {
+                                Color[] c = texture2D.GetPixels(x * tileGrafic.tileSize, y * tileGrafic.tileSize, tileGrafic.tileSize, tileGrafic.tileSize);
+                                Texture2D croppedTexture = new Texture2D(tileGrafic.tileSize, tileGrafic.tileSize);
+
+                                croppedTexture.SetPixels(c);
+                                croppedTexture.Apply();
+
+                                texturePaths = Help.Push(texturePaths, tileGrafic.graficPath + x.ToString() + ";" + y.ToString());
+                                textures = Help.Push(textures, croppedTexture);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        texturePaths = Help.Push(texturePaths, potentualThing.grafic.graficPath);
+                        textures = Help.Push(textures, Util.LoadTexture(Help.GetCollectionsPath() + potentualThing.grafic.graficPath));
+                    }
+                }
+            }
+            foreach (string featureName in Help.GetFeatureNames())
+            {
+                ThingWithGrafic? potentualThing = Help.GetFeature(featureName, typeof(ThingWithGrafic)) as ThingWithGrafic;
+                if (potentualThing != null && !potentualThing.grafic.placementLoading)
+                {
+                    potentualThing.grafic.LoadTexture();
                 }
             }
             WorldGen.ReGenerate();

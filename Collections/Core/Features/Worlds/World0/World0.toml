@@ -2,7 +2,8 @@
 name = "World0"
 position = [ 0, 0, 0 ]
 scale = 1
-height = [ "World0_Noise0", "World0_Noise1" ]
-moisture = [ "World0_Moisture0" ]
+seed = 25
+height = [ "World0_Noise0", "World0_Noise1", "World0_Noise2" ]
+moisture = [ "World0_Moisture0", "World0_Noise2" ]
 variety = [ "World0_Variety0" ]
 terrainCategory = "Terrain_Category"

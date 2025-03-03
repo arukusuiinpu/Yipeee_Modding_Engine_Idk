@@ -1,8 +1,0 @@
-["Core.WorldSettings"]
-name = "World1"
-position = [ 300, 0, 0 ]
-scale = 1
-height = [ "World1_Noise0", "World1_Noise1" ]
-moisture = [ "World1_Moisture0" ]
-variety = [ "World1_Variety0" ]
-terrainCategory = "Terrain_Category_World1"

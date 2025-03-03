@@ -1,0 +1,11 @@
+["Core.NoiseSettings"]
+function = "Multiply"
+seed = 83
+noiseScale = 4096
+octaves = 7
+persistance = 0.5
+lacunarity = 1
+lerpMin = 0.5
+lerpMax = 1.2
+heightMultiply = 3
+heightOffset = -0.2

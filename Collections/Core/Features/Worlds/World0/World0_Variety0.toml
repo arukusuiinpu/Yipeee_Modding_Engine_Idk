@@ -1,10 +1,10 @@
 ["Core.NoiseSettings"]
 function = "Add"
 seed = 62346
-noiseScale = 24
+noiseScale = 96
 octaves = 6
 persistance = 0.5
-lacunarity = 1.5
+lacunarity = 2
 lerpMin = 0.5
 lerpMax = 1.2
 heightMultiply = 1

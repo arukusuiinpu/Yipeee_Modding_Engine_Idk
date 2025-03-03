@@ -2,9 +2,9 @@
 function = "Add"
 seed = 421
 noiseScale = 48
-octaves = 2
-persistance = 0.5
-lacunarity = 1.5
+octaves = 5
+persistance = 0.6
+lacunarity = 2
 lerpMin = 0.5
 lerpMax = 1.2
 heightMultiply = 2

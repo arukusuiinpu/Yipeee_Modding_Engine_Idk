@@ -1,5 +1,0 @@
-["Core.ThingWithGrafic"]
-name = "Poor Soil"
-grafic = "\\Core\\Resources\\Terrain\\Poor_Soil.png"
-
-["Core.ExtTerrain"]

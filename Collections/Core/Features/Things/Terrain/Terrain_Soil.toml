@@ -1,0 +1,5 @@
+["Core.ThingWithGrafic"]
+name = "Soil"
+grafic = { type = "RandomTile", grafic = "\\Core\\Resources\\Terrain\\Soil.png", tileSize = 64, tilesX = 8, tilesY = 8 }
+
+["Core.ExtTerrain"]

@@ -8,8 +8,8 @@
     "\\Core\\Features\\Things\\Terrain",
     "\\Core\\Features\\Worlds",
     "\\Core\\Features\\Worlds\\World0",
-    "\\Core\\Features\\Worlds\\World1",
     "\\Core\\Resources"
   ],
+  "SelectedNode": "\\Core\\Features\\Worlds\\World0\\World0.toml",
   "PreviewInSolutionExplorer": false
 }

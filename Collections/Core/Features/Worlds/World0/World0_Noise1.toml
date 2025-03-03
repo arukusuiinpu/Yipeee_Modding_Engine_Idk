@@ -1,8 +1,8 @@
 ["Core.NoiseSettings"]
 function = "Multiply"
 seed = 83
-noiseScale = 320
-octaves = 4
+noiseScale = 1024
+octaves = 6
 persistance = 0.6
 lacunarity = 1.2
 lerpMin = 0.5
